@@ -5,8 +5,7 @@
     margin-left: auto;
 }
 
-.language:hover,
-i:hover {
+.language:hover {
     color: var(--body-link-hover);
     text-shadow: 1px 1px 3px var(--shadow);
 }

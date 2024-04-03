@@ -1,6 +1,7 @@
 {
-    "language_toggle": "Click the button to see the site in Dutch",
-    "theme_toggle": "Click the button to change the theme",
+    "language_toggle": "Click to see the site in Dutch",
+    "theme_golight": "Click to see the site in light mode",
+    "theme_godark": "Click to see the site in dark mode",
     "locale_string": "en-US",
     
     "projects": "Projects",

@@ -17,28 +17,30 @@
 .light-mode {
     --body-background: #fff1d0;
     --body-background-strong: #fffaee;
+    --body-background-weak: #f9e4b1;
+    --body-background-transparent: rgba(249, 228, 177,.5);
+    --body-background-transparent-80: rgba(249, 228, 177,.8);
     --body-text: #5b1515;
     --body-text-strong: #390505;
     --body-text-transparent: rgba(91, 21, 21,.3);
     --body-link: #8d1300;
     --body-link-hover: #be3900;
     --accent1: rgb(0, 142, 142);
-    --accent2: #ffc02e;
-    --accent2-hover: #ffc02e;
     --shadow: #fffcf4;
 }
 
 .dark-mode {
     --body-background: #5b1515;
     --body-background-strong: #390505;
+    --body-background-weak: #782424;
+    --body-background-transparent: rgba(120, 36, 36,.5);
+    --body-background-transparent-80: rgba(120, 36, 36,.8);
     --body-text: #fff1d0;
     --body-text-strong: #fffaee;
     --body-text-transparent: rgba(255, 241, 208,.3);
     --body-link: #ffda83;
     --body-link-hover: #ffc02e;
     --accent1: rgb(151, 237, 228);
-    --accent2: #8d1300;
-    --accent2-hover: #be3900;
     --shadow: #2b0202;
 }
 
@@ -82,7 +84,7 @@ a {
 
 a:hover, .accent {
     color: var(--body-link-hover);
-    text-shadow: 1px 1px 3px var(--shadow);
+    /* text-shadow: 1px 1px 3px var(--shadow); */
 }
 
 .notactive {

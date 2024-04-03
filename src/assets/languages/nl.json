@@ -1,6 +1,7 @@
 {
-    "language_toggle": "Klik op de knop om de site in het Engels te zien",
-    "theme_toggle": "Klik op de knop om van thema te veranderen",
+    "language_toggle": "Klik om de site in het Engels te zien",
+    "theme_golight": "Klik om de site in het lichte thema te zien",
+    "theme_godark": "Klik om de site in het donkere thema te zien",
     "locale_string": "nl-BE",
 
     "projects": "Projecten",

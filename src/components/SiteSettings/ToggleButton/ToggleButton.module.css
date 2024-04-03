@@ -4,10 +4,16 @@
     font-size: inherit;
     font-family: inherit;
     background-color: transparent;
+    border-radius: 3px;
     border: none;
     cursor: pointer;
     padding: .5rem .7rem;
     height: 45px;
+    transition: background-color .3s;
+}
+
+.toggle_button:hover {
+    background-color: var(--body-background-weak);
 }
 
 .toggle_button strong {

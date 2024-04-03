@@ -25,7 +25,7 @@ const SiteSettings = () => {
                     condition={theme === "light"}
                     option1={<i className="bi bi-sun"></i>}
                     option2={<i className="bi bi-moon"></i>}
-                    title={lexicon.theme_toggle}
+                    title={theme === "dark" ? lexicon.theme_golight : lexicon.theme_godark}
                 />
             </div>
         </>

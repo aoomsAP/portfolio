@@ -1,6 +1,7 @@
 import styles from "./Projects.module.css"
 import { projects } from "../../assets/projects/projects"
 import ProjectItem from "../../components/ProjectItem/ProjectItem";
+import ToTopButton from "../../components/ToTopButton/ToTopButton";
 
 const Projects = () => {
 
@@ -20,6 +21,8 @@ const Projects = () => {
                                 lastproject={key == projects.length - 1} />
                         })}
                 </section>
+
+                <ToTopButton />
 
             </main>
         </>
