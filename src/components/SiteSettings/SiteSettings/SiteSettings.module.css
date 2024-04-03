@@ -1,0 +1,12 @@
+.settings {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.language:hover,
+i:hover {
+    color: var(--body-link-hover);
+    text-shadow: 1px 1px 3px var(--shadow);
+}

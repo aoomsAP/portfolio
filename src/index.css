@@ -1,0 +1,115 @@
+/* styling for entire project */
+/* -------------------------- */
+
+/* fonts */
+
+
+/* icons */
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* variables */
+
+* {
+    --max-width: 900px;
+}
+
+.light-mode {
+    --body-background: #fff1d0;
+    --body-background-strong: #fffaee;
+    --body-text: #5b1515;
+    --body-text-strong: #390505;
+    --body-text-transparent: rgba(91, 21, 21,.3);
+    --body-link: #8d1300;
+    --body-link-hover: #be3900;
+    --accent1: rgb(0, 142, 142);
+    --accent2: #ffc02e;
+    --accent2-hover: #ffc02e;
+    --shadow: #fffcf4;
+}
+
+.dark-mode {
+    --body-background: #5b1515;
+    --body-background-strong: #390505;
+    --body-text: #fff1d0;
+    --body-text-strong: #fffaee;
+    --body-text-transparent: rgba(255, 241, 208,.3);
+    --body-link: #ffda83;
+    --body-link-hover: #ffc02e;
+    --accent1: rgb(151, 237, 228);
+    --accent2: #8d1300;
+    --accent2-hover: #be3900;
+    --shadow: #2b0202;
+}
+
+/* body */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Consolas, 'Courier New', monospace;
+    line-height: 1.5;
+    color: var(--body-text);
+    background-color: var(--body-background);
+}
+
+header,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend {
+    font-weight: normal;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* links */
+
+a {
+    color: var(--body-link);
+}
+
+a:hover, .accent {
+    color: var(--body-link-hover);
+    text-shadow: 1px 1px 3px var(--shadow);
+}
+
+.notactive {
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+/* input elements */
+
+input {
+    font-family: inherit;
+    padding: .3rem;
+    border: 1.5px outset var(--body-link);
+    color: var(--body-text);
+    background-color: var(--input-background);
+}
+
+input:hover,
+input:focus,
+input:active {
+    background-color: var(--input-background);
+}
+
+input[type=radio],
+input[type=checkbox] {
+    accent-color: var(--body-link);
+}

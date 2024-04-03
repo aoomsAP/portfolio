@@ -1,0 +1,10 @@
+@media all and (max-width: 800px) {
+    .nav {
+        padding: 0 1rem;
+        text-align: left;
+    }
+
+    .menu li {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,30 @@
+.tag, .accent {
+    font-family: "Courier New";
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: var(--body-background-strong);
+    padding: .3rem .4rem .3rem .3rem;
+    border: 2px solid transparent;
+    margin: .2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: border .4s, opacity .4s;
+    opacity: .8;
+}
+
+.tag:hover, .accent:hover {
+    border: 2px solid var(--body-text);
+    opacity: 1;
+}
+
+.tag {
+    background-color: var(--body-link-hover);
+}
+
+
+.accent {
+    background-color: var(--accent1);
+}
+
+

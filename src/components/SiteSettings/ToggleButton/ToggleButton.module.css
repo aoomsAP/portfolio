@@ -1,0 +1,16 @@
+.toggle_button {
+    color: var(--body-link);
+    margin: 0;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: .5rem .7rem;
+    height: 45px;
+}
+
+.toggle_button strong {
+    font-weight: normal;
+    text-decoration: underline;
+}

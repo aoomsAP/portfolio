@@ -1,0 +1,39 @@
+.project {
+    padding: 2rem 0 2rem 0;
+    /* border-bottom: 1px solid var(--body-text-transparent) */
+}
+
+.date {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--body-link);
+    margin: -1rem 0 2rem 0;
+}
+
+.links {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.taglist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hr {
+    overflow: visible;
+    padding: 0;
+    margin: 5rem auto 0 auto;
+    border: none;
+    border-top: 1px solid var(--body-text-transparent);
+    color: var(--body-text-transparent);
+    text-align: center;
+    width: 10rem;
+}
+.hr:after {
+    content: "&&";
+    display: inline-block;
+    position: relative;
+    top: -.8rem;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    background: var(--body-background);
+}
