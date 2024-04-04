@@ -26,8 +26,11 @@ export const SiteSettingsContext = React.createContext<SiteSettingsContext>({
 });
 
 export const SiteSettingsProvider = ({ children }: { children: React.ReactNode }) => {
+    // user system theme preference
+    const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+
     // states
-    const [theme, setTheme] = useState<string>(localStorage.getItem("theme") ?? "light");
+    const [theme, setTheme] = useState<string>(localStorage.getItem("theme") ?? (prefersLight ? "light" : "dark"));
     const [language, setLanguage] = useState<string>(localStorage.getItem("language") ?? "en");
 
     // dictionary containing the lexicon for each available language
