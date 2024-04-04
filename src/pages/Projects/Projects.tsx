@@ -2,14 +2,17 @@ import styles from "./Projects.module.css"
 import { projects } from "../../assets/projects/projects"
 import ProjectItem from "../../components/ProjectItem/ProjectItem";
 import ToTopButton from "../../components/ToTopButton/ToTopButton";
+import { useContext } from "react";
+import { SiteSettingsContext } from "../../contexts/SiteSettingsContext";
 
 const Projects = () => {
+    const {lexicon} = useContext(SiteSettingsContext);
 
     return (
         <>
             <main className={styles.main}>
 
-                <h1>// Projects</h1>
+                <h1>// {lexicon.projects}</h1>
 
                 <section>
                     {projects

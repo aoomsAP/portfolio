@@ -122,7 +122,9 @@ function ContactForm() {
                 onChange={e => setNameCount(e.target.value.length)}
               />
               <div>
-                <small className={nameCount < maxName ? styles.character_count : styles.character_count_error}>
+                <small
+                  aria-label={lexicon.character_count_alt}
+                  className={nameCount < maxName ? styles.character_count : styles.character_count_error}>
                   {nameCount}/{maxName}
                   </small>
               </div>
@@ -175,7 +177,9 @@ function ContactForm() {
                  onChange={e => setMessageCount(e.target.value.length)}
               />
               <div>
-                <small className={messageCount < maxMessage ? styles.character_count : styles.character_count_error}>
+                <small
+                  aria-label={lexicon.character_count_alt}
+                  className={messageCount < maxMessage ? styles.character_count : styles.character_count_error}>
                   {messageCount}/{maxMessage}
                   </small>
               </div>
@@ -194,7 +198,8 @@ function ContactForm() {
                   width="100%"
                   color={theme == "dark" ? "#390505" : "#fffaee"}
                   radius="9"
-                  ariaLabel="three-dots-loading"
+                  ariaLabel={lexicon.loading_animation}
+                  aria-hidden
                   wrapperStyle={{}}
                   wrapperClass=""
                 />
@@ -209,7 +214,10 @@ function ContactForm() {
         {isSubmitSuccessful && isSuccess && (
           <>
             <div className={styles.success_container}>
-              <i className="bi bi-envelope-check"></i>
+              <i 
+                aria-hidden
+                className="bi bi-envelope-check">
+              </i>
               <h2>{lexicon.contact_submit_success_title}</h2>
               {Message && <>
               <blockquote>
@@ -229,7 +237,10 @@ function ContactForm() {
 
         {isSubmitSuccessful && !isSuccess && (
           <div className={styles.error_container}>
-            <i className="bi bi-envelope-x"></i>
+            <i 
+            aria-hidden
+            className="bi bi-envelope-x">
+            </i>
             <h2>{lexicon.contact_submit_error_title}</h2>
             <p>{lexicon.contact_submit_error_message}</p>
             <button

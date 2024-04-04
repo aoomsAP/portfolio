@@ -19,6 +19,7 @@ const SiteSettings = () => {
                     option1={<><strong className={styles.language}>en</strong>&nbsp;|&nbsp;<span className={styles.language}>nl</span></>}
                     option2={<><span className={styles.language}>en</span>&nbsp;|&nbsp;<strong className={styles.language}>nl</strong></>}
                     title={lexicon.language_toggle}
+                    ariaLabel={lexicon.language_toggle_alt}
                 />
                 <ToggleButton
                     onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -26,6 +27,7 @@ const SiteSettings = () => {
                     option1={<i className="bi bi-sun"></i>}
                     option2={<i className="bi bi-moon"></i>}
                     title={theme === "dark" ? lexicon.theme_golight : lexicon.theme_godark}
+                    ariaLabel={lexicon.theme_toggle_alt}
                 />
             </div>
         </>

@@ -24,6 +24,7 @@
     --body-text-strong: #390505;
     --body-text-weak: #782424;
     --body-text-transparent: rgba(91, 21, 21, .3);
+    --body-text-transparent-70: rgba(91, 21, 21, .7);
     --body-link: #8d1300;
     --body-link-hover: #be3900;
     --accent1: rgb(0, 142, 142);
@@ -43,6 +44,7 @@
     --body-text-strong: #fffaee;
     --body-text-weak: #f9e4b1;
     --body-text-transparent: rgba(255, 241, 208, .3);
+    --body-text-transparent-70: rgba(255, 241, 208, .7);
     --body-link: #ffda83;
     --body-link-hover: #ffc02e;
     --accent1: rgb(161, 240, 216);
@@ -123,6 +125,11 @@ textarea {
     background-color: var(--body-background-weak);
     border: none;
     border-radius: 3px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--body-text-transparent-70);
 }
 
 input:hover,
