@@ -39,23 +39,3 @@
     display: flex;
     flex-wrap: wrap;
 }
-
-.hr {
-    overflow: visible;
-    padding: 0;
-    margin: 5rem auto 0 auto;
-    border: none;
-    border-top: 1px solid var(--body-text-transparent);
-    color: var(--body-text-transparent);
-    text-align: center;
-    width: 10rem;
-}
-.hr:after {
-    content: "&&";
-    display: inline-block;
-    position: relative;
-    top: -.8rem;
-    font-size: 1rem;
-    padding: 0 0.5rem;
-    background: var(--body-background);
-}

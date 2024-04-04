@@ -36,7 +36,7 @@ const ProjectItem = ({ project, lastproject }: ProjectItemProps) => {
                     accent={tag.includes("project") ? true : false} />
                 })}
                 </div>
-                {!lastproject && <hr className={styles.hr} />}
+                {!lastproject && <hr/>}
             </article>
         </>
     )

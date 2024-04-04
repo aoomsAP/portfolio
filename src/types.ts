@@ -31,3 +31,19 @@ export interface Project {
     demo?: string,
     info?: string,
 }
+
+export interface CustomFormData {
+    access_key: string,
+    botcheck: boolean,
+    email: string,
+    from_name: string,
+    message: string,
+    name: string,
+    subject: string,
+}
+
+export interface PostResult {
+    data: CustomFormData,
+    message: string,
+    success: boolean,
+}
