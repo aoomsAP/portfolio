@@ -1,6 +1,8 @@
 // Language interface
 // ----------------------------------------------------------------------------------
 
+import { ReactImageGalleryItem } from "react-image-gallery";
+
 export interface Lexicon {
     [key: string]: string,
 }
@@ -22,10 +24,10 @@ export interface Project {
     title_en: string,
     title_nl: string,
     date: Date,
-    imgBig: string,
-    imgSmall: string,
+    images: ReactImageGalleryItem[],
     description_en: string | JSX.Element,
     description_nl: string | JSX.Element,
+    challenges: string[],
     tags: string[],
     github?: string,
     demo?: string,

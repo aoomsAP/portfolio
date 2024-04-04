@@ -1,13 +1,29 @@
+import styles from "./ProjectItem.module.css";
 import { useContext } from "react";
 import Tag from "../Tag/Tag";
-import styles from "./ProjectItem.module.css"
 import { SiteSettingsContext } from "../../contexts/SiteSettingsContext";
 import { Project } from "../../types";
+import ImageGallery from "react-image-gallery";
 
 interface ProjectItemProps {
     project: Project;
     lastproject: boolean;
 }
+
+const images = [
+    {
+      original: "https://picsum.photos/id/1018/1000/600/",
+      thumbnail: "https://picsum.photos/id/1018/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1015/1000/600/",
+      thumbnail: "https://picsum.photos/id/1015/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1019/1000/600/",
+      thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+  ];
 
 const ProjectItem = ({ project, lastproject }: ProjectItemProps) => {
     const { lexicon, language } = useContext(SiteSettingsContext);
@@ -17,13 +33,28 @@ const ProjectItem = ({ project, lastproject }: ProjectItemProps) => {
     return (
         <>
             <article className={styles.project}>
-                {/* <img src={img} alt={title} /> */}
+                {project.images.length > 1 && (
+                    <ImageGallery 
+                    items={project.images}
+                    lazyLoad
+                    showThumbnails={false}
+                    showFullscreenButton={false}
+                    showPlayButton={false}
+                    showBullets={true}
+                    showIndex={false}
+                    onErrorImageURL=""
+                />
+                )}
                 
                 <h2>{language == "en" ? project.title_en : project.title_nl}</h2>
                 
                 <p className={styles.date}>{project.date.toLocaleDateString(lexicon.locale_string,{month: "long",year: "numeric"})}</p>
                 
                 <p>{language == "en" ? project.description_en : project.description_nl}</p>
+
+                <ul>{project.challenges.map((challenge,key) => {
+                    return <li key={key}>{challenge}</li>
+                })}</ul>
                 
                 {(project.demo || project.github) && <p aria-label={lexicon.projects_links} className={styles.links}>
                     <i className="bi bi-search" aria-hidden></i>
