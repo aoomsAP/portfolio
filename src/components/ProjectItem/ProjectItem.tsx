@@ -42,7 +42,7 @@ const ProjectItem = ({ project, lastproject }: ProjectItemProps) => {
                 })}
                 </div>
 
-                {!lastproject && <hr/>}
+                {!lastproject && <hr aria-hidden/>}
 
             </article>
         </>

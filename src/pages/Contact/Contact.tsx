@@ -12,7 +12,7 @@ const Contact = () => {
 
                 <h1>// Contact</h1>
                 <ContactForm/>
-                <hr />
+                <hr aria-hidden/>
                 <p className={styles.linkedin}>
                     {lexicon.contact_linkedin} <a href="www.linkedin.com/in/alki-o-ab117b299">LinkedIn</a>.
                 </p>
