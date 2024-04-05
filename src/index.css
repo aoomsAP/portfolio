@@ -190,3 +190,36 @@ hr:after {
     padding: 0 0.5rem;
     background: var(--body-background);
 }
+
+/* image gallery */
+
+.image-gallery-slides {
+    white-space: normal !important;
+}
+
+.image-gallery-icon {
+    color: var(--body-link);
+}
+
+.image-gallery-icon:hover {
+    color: var(--body-link-hover);
+    background-color: transparent;
+}
+
+.image-gallery-icon:focus {
+    outline-color: var(--outline);
+}
+
+.image-gallery-bullet {
+    background-color: var(--body-text-transparent) !important;
+    border-color: var(--body-link-hover) !important;
+}
+
+.image-gallery-bullets-container .active {
+    background-color: var(--body-link) !important;
+    border-color: var(--body-link-hover) !important;
+}
+
+.image-gallery-bullet:hover {
+    background-color: var(--body-link-hover) !important;
+}
