@@ -1,5 +1,5 @@
 .project {
-    padding: 2rem 0 2rem 0;
+    margin: 2rem 0 2rem 0;
     /* border-bottom: 1px solid var(--body-text-transparent) */
 }
 
@@ -7,6 +7,10 @@
     font-family: 'Courier New', Courier, monospace;
     color: var(--body-link);
     margin: -1rem 0 2rem 0;
+}
+
+.challenges {
+    margin-bottom: 2rem;
 }
 
 .links {

@@ -8,6 +8,8 @@
     
     "logo_alt": "initials logo",
 
+    "home_experience": "Experience with",
+
     "about_title": "About me",
     "about_description": "Alki Ooms is a software developer from Belgium. She enjoys learning new stuff, being challenged and having approximate knowledge of many things. When she's not staring at a screen, she likes drawing and being an amateur multi-instrumentalist. Her latest victim is the violin.",
 
@@ -15,6 +17,7 @@
     "projects_links": "Links",
     "magnifying_glass": "magnifying glass",
     "to_top_button": "return to top button",
+    "projects_challenges": "Challenges",
 
     "contact_welcome": "Feedback, questions, interest? Contact me below.",
     "contact_linkedin": "If preferred, feel free to send a message via",

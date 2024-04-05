@@ -13,34 +13,39 @@ interface ProjectItemProps {
 const ProjectItem = ({ project, lastproject }: ProjectItemProps) => {
     const { lexicon, language } = useContext(SiteSettingsContext);
 
-    // RETURNS project item
-
     return (
         <>
             <article className={styles.project}>
                 {project.images.length > 1 && (
-                    <ImageGallery 
-                    items={project.images}
-                    lazyLoad
-                    showThumbnails={false}
-                    showFullscreenButton={false}
-                    showPlayButton={false}
-                    showBullets={true}
-                    showIndex={false}
-                    onErrorImageURL=""
-                />
+                    <ImageGallery
+                        items={project.images}
+                        lazyLoad
+                        showThumbnails={false}
+                        showFullscreenButton={false}
+                        showPlayButton={false}
+                        showBullets={true}
+                        showIndex={false}
+                        onErrorImageURL=""
+                    />
                 )}
-                
+
                 <h2>{language == "en" ? project.title_en : project.title_nl}</h2>
-                
-                <p className={styles.date}>{project.date.toLocaleDateString(lexicon.locale_string,{month: "long",year: "numeric"})}</p>
-                
+
+                <p className={styles.date}>{project.date.toLocaleDateString(lexicon.locale_string, { month: "long", year: "numeric" })}</p>
+
                 <p>{language == "en" ? project.description_en : project.description_nl}</p>
 
-                <ul>{project.challenges.map((challenge,key) => {
-                    return <li key={key}>{challenge}</li>
-                })}</ul>
-                
+                <div className={styles.challenges}>{lexicon.projects_challenges}:
+                    {language == "en"
+                        ? <ul>{project.challenges_en.map((challenge, key) => {
+                            return <li key={key}>{challenge}</li>
+                        })}</ul>
+                        : <ul>{project.challenges_nl.map((challenge, key) => {
+                            return <li key={key}>{challenge}</li>
+                        })}</ul>
+                    }
+                </div>
+
                 {(project.demo || project.github) && <p aria-label={lexicon.projects_links} className={styles.links}>
                     <i className="bi bi-search" aria-hidden></i>
                     {project.demo && <a href={project.demo}>{`live demo`}</a>}
@@ -49,16 +54,16 @@ const ProjectItem = ({ project, lastproject }: ProjectItemProps) => {
                 </p>}
 
                 <div className={styles.taglist}>
-                {project.tags.map((tag,key) => {
-                    return <Tag
-                    key={key}
-                    onClick={function(){}}
-                    label={tag}
-                    accent={tag.includes("project") ? true : false} />
-                })}
+                    {project.tags.map((tag, key) => {
+                        return <Tag
+                            key={key}
+                            onClick={function () { }}
+                            label={tag}
+                            accent={tag.includes("project") ? true : false} />
+                    })}
                 </div>
 
-                {!lastproject && <hr aria-hidden/>}
+                {!lastproject && <hr aria-hidden />}
 
             </article>
         </>

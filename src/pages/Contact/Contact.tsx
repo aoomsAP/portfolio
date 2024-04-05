@@ -16,7 +16,6 @@ const Contact = () => {
                 <p className={styles.linkedin}>
                     {lexicon.contact_linkedin} <a href="www.linkedin.com/in/alki-o-ab117b299">LinkedIn</a>.
                 </p>
-                
             </main>
         </>
     )

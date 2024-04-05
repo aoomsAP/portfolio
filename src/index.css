@@ -90,7 +90,7 @@ legend {
 h1 {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 /* links */
@@ -198,12 +198,14 @@ hr:after {
 }
 
 .image-gallery-icon {
+    opacity: .5;
     color: var(--body-link);
 }
 
 .image-gallery-icon:hover {
     color: var(--body-link-hover);
     background-color: transparent;
+    opacity: 1;
 }
 
 .image-gallery-icon:focus {
