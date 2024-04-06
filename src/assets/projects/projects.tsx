@@ -48,7 +48,7 @@ export const projects: Project[] = [
         title_nl: "Lord Of The Rings Quiz",
         date: new Date("2023-12-27"),
         images: [],
-        video: "https://www.youtube.com/watch?v=XCWxrdw_WOM",
+        video: "https://www.youtube.com/embed/XCWxrdw_WOM?si=egVEprysVHBSDXOY",
         description_en: <>A quiz centered around Lord Of The Rings quotes, using <a href="https://the-one-api.dev/">The One API</a> and Express.js as a framework. A user can register and login, and preferences (favorite quotes, blacklist, high score) are saved in a MongoDB database.</>,
         description_nl: <>Een quiz over Lord Of The Rings quotes, op basis van <a href="https://the-one-api.dev/">The One API</a> en Express.js als framework. Een speler can registreren en inloggen, en diens voorkeuren (favoriete quotes, blacklist, high score) worden bijgehouden in een MongoDB database.</>,
         challenges_en: ["trello, scrum & github reviews: working in a team","independent project design trial and error","sessions, cookies & hashing"],
@@ -96,17 +96,16 @@ export const projects: Project[] = [
         github: "https://github.com/aoomsAP/flip-the-flag",
         demo: "https://flip-the-flag.vercel.app/"
     },
-    // {
-    //     title_en: "Portfolio Website v1",
-    //     title_nl: "Portfolio Website v1",
-    //     date: new Date("2024-05-10"),
-    //     images: [],
-    //     description_en: <>First crack at a simple portfolio website in React.js.</>,
-    //     description_nl: <>Eerste poging tot een simpele portfolio website in React.js.</>,
-    //     challenges_en: ["adapting react hook form for contact functionality","projects likely better suited for CMS","design vs accessibility"],
-    //     challenges_nl: ["react hook form aanpassen voor contact functionaliteit","projecten waarschijnlijk beter geschikt voor CMS","design vs accessibiliteit"],
-    //     tags: ["personal project", "react", "react.js", "typescript", "css"],
-    //     github: "https://github.com/aoomsAP/flip-the-flag",
-    //     demo: "https://flip-the-flag.vercel.app/"
-    // }
+    {
+        title_en: "Portfolio Website v1",
+        title_nl: "Portfolio Website v1",
+        date: new Date("2024-04-10"),
+        images: [],
+        description_en: <>First crack at a simple portfolio website in React.js.</>,
+        description_nl: <>Eerste poging tot een simpele portfolio website in React.js.</>,
+        challenges_en: ["adapting react hook form for contact functionality","projects likely better suited for CMS","design vs accessibility"],
+        challenges_nl: ["react hook form aanpassen voor contact functionaliteit","projecten waarschijnlijk beter geschikt voor CMS","design vs accessibiliteit"],
+        tags: ["personal project", "react", "react.js", "typescript", "css"],
+        github: "https://github.com/aoomsAP/portfolio",
+    }
 ]

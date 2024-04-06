@@ -10,11 +10,16 @@ const Tag = ({ label, onClick, accent }: TagProps) => {
 
     return (
         <>
-            <button className={accent ? styles.accent : styles.tag}
+            {/* for filtering */}
+            {/* <button className={accent ? styles.accent : styles.tag}
                 onClick={onClick}
                 value={label}>
                 # {label}
-            </button>
+            </button> */}
+
+            <div className={accent ? styles.accent : styles.tag}>
+                # {label}
+            </div>
         </>
     )
 }

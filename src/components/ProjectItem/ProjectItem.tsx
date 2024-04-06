@@ -16,7 +16,15 @@ const ProjectItem = ({ project, lastproject }: ProjectItemProps) => {
     return (
         <>
             <article className={styles.project}>
-                {project.video && <iframe className={styles.video} src={project.video}></iframe>}
+                {project.video && <iframe
+                    className={styles.video}
+                    src={project.video}
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen>
+                </iframe>
+                }
                 {project.images && (
                     <ImageGallery
                         items={project.images}

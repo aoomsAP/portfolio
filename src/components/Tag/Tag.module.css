@@ -8,7 +8,7 @@
     border: none;
     margin: .2rem;
     border-radius: 3px;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: opacity .4s;
     opacity: .8;
 }
