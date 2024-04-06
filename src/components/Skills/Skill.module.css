@@ -1,0 +1,11 @@
+.emphasis {
+    color: var(--body-text);
+}
+
+.skill {
+    transition: color .4s;
+}
+
+.skill:hover {
+    color: var(--body-link);
+}

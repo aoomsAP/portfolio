@@ -50,3 +50,9 @@ export interface PostResult {
     message: string,
     success: boolean,
 }
+
+export interface ISkill {
+    name: string,
+    icon: string,
+    emphasis?: boolean,
+}

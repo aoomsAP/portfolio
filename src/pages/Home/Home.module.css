@@ -11,14 +11,6 @@
     margin-bottom: 2rem;
 }
 
-.skills {
-    font-size: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    color: var(--body-text-transparent);
-}
-
-.skills .emphasis {
-    color: var(--body-text);
+.skills_description {
+    color: var(--body-link);
 }

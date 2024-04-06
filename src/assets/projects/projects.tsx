@@ -50,7 +50,7 @@ export const projects: Project[] = [
         description_nl: <>Voor het vak Webframeworks kregen we de opdracht om een simpele React.js applicatie te creëren die gebruik maakt van een public API. Met de <a href="https://restcountries.com/">REST Countries API</a> maakte ik een website die een gebruiker uitnodigt om de namen van landen en/of hoofdsteden  te raden bij elke vlag, of gewoon te browsen en meer details over een land te ontdekken. De website bevat verschillende filters & sorteeropties, alsook instellingen voor donker/light thema en taalkeuze.</>,
         challenges_en: ["reusable components","property drilling"],
         challenges_nl: ["herbruikbare componenten","property drilling"],
-        tags: ["school project", "react", "react.js", "typescript", "tsx", "css"],
+        tags: ["school project", "react", "react.js", "typescript", "jsx", "css"],
         github: "https://github.com/aoomsAP/flip-the-flag",
         demo: "https://flip-the-flag.vercel.app/"
     },
@@ -63,7 +63,7 @@ export const projects: Project[] = [
         description_nl: <>Eerste poging tot een simpele portfolio website in React.js.</>,
         challenges_en: ["adapting react hook form","projects section likely better suited for CMS","attention to accessibility"],
         challenges_nl: ["react hook form aanpassen","projecten pagina waarschijnlijk beter geschikt voor CMS","aandacht voor accessibiliteit"],
-        tags: ["personal project", "react", "react.js", "typescript", "tsx", "css"],
+        tags: ["personal project", "react", "react.js", "typescript", "jsx", "css"],
         github: "https://github.com/aoomsAP/flip-the-flag",
         demo: "https://flip-the-flag.vercel.app/"
     }

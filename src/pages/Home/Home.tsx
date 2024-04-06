@@ -1,9 +1,41 @@
 import styles from "./Home.module.css";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { SiteSettingsContext } from "../../contexts/SiteSettingsContext";
+import { ISkill } from "../../types";
+import SkillsList from "../../components/Skills/SkillsList";
 
 const Home = () => {
     const { lexicon } = useContext(SiteSettingsContext);
+
+    const skills: ISkill[] = [
+        { name: "HTML", icon: "devicon-html5-plain-wordmark", emphasis: true },
+        { name: "CSS", icon: "devicon-css3-plain-wordmark", emphasis: true },
+        { name: "Javascript", icon: "devicon-javascript-plain", emphasis: true },
+        { name: "MySQL", icon: "devicon-mysql-plain-wordmark", emphasis: true },
+        { name: "C#", icon: "devicon-csharp-plain", emphasis: true },
+        { name: "Node.js", icon: "devicon-nodejs-plain-wordmark", emphasis: true },
+        { name: "NPM", icon: "devicon-npm-original-wordmark", emphasis: true },
+        { name: "Typescript", icon: "devicon-typescript-plain", emphasis: true },
+        { name: "Express.js", icon: "devicon-express-original-wordmark", emphasis: true },
+        { name: "MongoDB", icon: "devicon-mongodb-plain-wordmark", emphasis: true },
+        { name: "Bootstrap", icon: "devicon-bootstrap-plain-wordmark", emphasis: true },
+        { name: "React.js", icon: "devicon-react-original-wordmark", emphasis: true },
+        { name: "Git", icon: "devicon-git-plain-wordmark", emphasis: true },
+
+        { name: "Github", icon: "devicon-github-original-wordmark" },
+        { name: "Neo4J", icon: "devicon-neo4j-plain-wordmark" },
+        { name: "JQuery", icon: "devicon-jquery-plain-wordmark" },
+        { name: "Sass", icon: "devicon-sass-original" },
+        { name: "Wordpress", icon: "devicon-wordpress-plain" },
+        { name: "Docker", icon: "devicon-docker-plain-wordmark" },
+        { name: "Bash", icon: "devicon-bash-plain" },
+        { name: "Postman", icon: "devicon-postman-plain" },
+        { name: "XML", icon: "devicon-xml-plain" },
+        { name: "Swagger", icon: "devicon-swagger-plain" },
+        { name: "Adobe Photoshop", icon: "devicon-photoshop-plain"}
+    ]
+
+    const [skill, setSkill] = useState<string>("");
 
     return (
         <>
@@ -13,31 +45,8 @@ const Home = () => {
                 <p>{lexicon.about_description}</p>
 
                 <section className={styles.skills_wrapper}>
-                    <p>{lexicon.home_experience}:</p>
-                    <div className={styles.skills}>
-                        <i title="HTML" aria-label="HTML" className={`devicon-html5-plain-wordmark ${styles.emphasis}`}></i>
-                        <i title="CSS" aria-label="CSS" className={`devicon-css3-plain-wordmark ${styles.emphasis}`}></i>
-                        <i title="Javascript" aria-label="Javascript" className={`devicon-javascript-plain ${styles.emphasis}`}></i>
-                        <i title="MySQL" aria-label="MySQL" className={`devicon-mysql-plain-wordmark ${styles.emphasis}`}></i>
-                        <i title="C#" aria-label="C#" className={`devicon-csharp-plain ${styles.emphasis}`}></i>
-                        <i title="Node.js" aria-label="Node.js" className={`devicon-nodejs-plain-wordmark ${styles.emphasis}`}></i>
-                        <i title="NPM" aria-label="NPM" className={`devicon-npm-original-wordmark ${styles.emphasis}`}></i>
-                        <i title="Typescript" aria-label="Typescript" className={`devicon-typescript-plain ${styles.emphasis}`}></i>
-                        <i title="Express.js" aria-label="Express.js" className={`devicon-express-original-wordmark ${styles.emphasis}`}></i>
-                        <i title="MongoDB" aria-label="MongoDB" className={`devicon-mongodb-plain-wordmark ${styles.emphasis}`}></i>
-                        <i title="Neo4J" aria-label="Neo4J" className={`devicon-neo4j-plain-wordmark`}></i>
-                        <i title="Bootstrap" aria-label="Bootstrap" className={`devicon-bootstrap-plain-wordmark ${styles.emphasis}`}></i>
-                        <i title="JQuery" aria-label="JQuery" className={`devicon-jquery-plain-wordmark`}></i>
-                        <i title="Sass" aria-label="Sass" className={`devicon-sass-original`}></i>
-                        <i title="React.js" aria-label="React.js" className={`devicon-react-original-wordmark ${styles.emphasis}`}></i>
-                        <i title="Wordpress" aria-label="Wordpress" className={`devicon-wordpress-plain`}></i>
-                        <i title="Docker" aria-label="Docker" className={`devicon-docker-plain-wordmark`}></i>
-                        <i title="Bash" aria-label="Bash" className={`devicon-bash-plain`}></i>
-                        <i title="Git" aria-label="Git" className={`devicon-git-plain-wordmark ${styles.emphasis}`}></i>
-                        <i title="Github" aria-label="Github" className={`devicon-github-original-wordmark ${styles.emphasis}`}></i>
-                        <i title="Postman" aria-label="Postman" className={`devicon-postman-plain-wordmark`}></i>
-                        <i title="XML" aria-label="XML" className={`devicon-xml-plain`}></i>
-                    </div>
+                    <p>{lexicon.home_experience}: <span className={styles.skills_description}>{skill}</span></p>
+                    <SkillsList skills={skills} setSkill={setSkill} />
                 </section>
 
             </main>
