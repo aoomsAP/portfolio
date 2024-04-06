@@ -11,12 +11,13 @@ interface ProjectItemProps {
 }
 
 const ProjectItem = ({ project, lastproject }: ProjectItemProps) => {
-    const { lexicon, language } = useContext(SiteSettingsContext);
+    const { theme, lexicon, language } = useContext(SiteSettingsContext);
 
     return (
         <>
             <article className={styles.project}>
-                {project.images.length > 1 && (
+                {project.video && <iframe className={styles.video} src={project.video}></iframe>}
+                {project.images && (
                     <ImageGallery
                         items={project.images}
                         lazyLoad
@@ -25,7 +26,7 @@ const ProjectItem = ({ project, lastproject }: ProjectItemProps) => {
                         showPlayButton={false}
                         showBullets={true}
                         showIndex={false}
-                        onErrorImageURL=""
+                        onErrorImageURL={theme == "dark" ? "images/image-not-found_light.png" : "images/image-not-found_dark.png"}
                     />
                 )}
 
@@ -48,7 +49,7 @@ const ProjectItem = ({ project, lastproject }: ProjectItemProps) => {
 
                 {(project.demo || project.github) && <p aria-label={lexicon.projects_links} className={styles.links}>
                     <i className="bi bi-search" aria-hidden></i>
-                    {project.demo && <a href={project.demo}>{`live demo`}</a>}
+                    {project.demo && <a href={project.demo}>{`live demo${project.demo.includes("render") ? ` (${lexicon.loads_slowly})` : ""}`}</a>}
                     {project.demo && project.github && <>{` || `}</>}
                     {project.github && <a href={project.github}>{`github`}</a>}
                 </p>}
