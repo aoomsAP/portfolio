@@ -9,3 +9,15 @@
     color: var(--body-link-hover);
     text-shadow: 1px 1px 3px var(--shadow);
 }
+
+.mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.mobile button {
+    width: 100%;
+    text-align: left;
+}

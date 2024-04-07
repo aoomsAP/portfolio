@@ -20,11 +20,28 @@ header {
     justify-content: center;
 }
 
-header>div {
+.nav-desktop {
     flex-basis: var(--max-width);
     display: flex;
     justify-content: center;
     align-items: last baseline;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.nav-icon {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--body-text);
+    background-color: transparent;
+    transition: color .4s;
+}
+
+.nav-icon:hover {
+    background-color: transparent;
+    color: var(--body-link-hover)
 }
 
 main {
@@ -38,4 +55,41 @@ footer {
     padding: 1rem;
     text-align: center;
     text-transform: lowercase;
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 0;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .nav-mobile_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: last baseline;
+        border-bottom: 1px solid var(--body-text-transparent);
+    }
+
+    .nav-mobile_menu {
+        padding: 1rem 0;
+    }
+
+    .nav-mobile_menu hr {
+        width: 0rem;
+        margin-top: 2rem;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .nav-mobile_menu hr:after {
+        content: "//"
+    }
 }

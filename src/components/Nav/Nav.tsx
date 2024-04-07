@@ -4,9 +4,10 @@ import { IMenuItem } from "../../types"
 
 interface NavProps {
     navItems: IMenuItem[],
+    mobile?: boolean,
 }
 
-const Nav = ({navItems}: NavProps) => {
+const Nav = ({navItems, mobile}: NavProps) => {
 
     // RETURNS nav, with:
     // - a menu, with the given amount of links
@@ -14,7 +15,7 @@ const Nav = ({navItems}: NavProps) => {
     return (
         <>
             <nav className={styles.nav} >
-                <Menu items={navItems}/>
+                <Menu items={navItems} mobile={mobile ? true : false}/>
             </nav>
         </>
     )

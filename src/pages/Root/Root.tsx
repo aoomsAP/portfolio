@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom"
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { SiteSettingsContext } from "../../contexts/SiteSettingsContext";
 import "./Root.css"
 
@@ -24,13 +24,29 @@ const Root = () => {
         { type: "link", text: "Github", url: "https://github.com/aoomsAP" },
     ]
 
+    const [showNav, setShowNav] = useState<boolean>(false);
+
     return (
         <>
             <header>
-                <div>
+                <div className="nav-desktop">
                     <Initials size="4rem" />
                     <Nav navItems={navItems} />
                     <SiteSettings />
+                </div>
+                <div className="nav-mobile">
+                    <div className="nav-mobile_header">
+                    <Initials size="4rem" />
+                    <button className="nav-icon" onClick={() => setShowNav(showNav ? false : true)}>
+                        <i className="bi bi-list" style={{ display: (showNav ? "none" : "block") }}></i>
+                        <i className="bi bi-x-lg" style={{ display: (showNav ? "block" : "none") }}></i>
+                    </button>
+                    </div>
+                    <div className="nav-mobile_menu"style={{ display: (showNav ? "block" : "none") }}>
+                        <Nav navItems={navItems} mobile={true} />
+                        <hr />
+                        <SiteSettings mobile={true} />
+                    </div>
                 </div>
             </header>
 

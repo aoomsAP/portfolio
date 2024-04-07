@@ -3,7 +3,11 @@ import styles from "./SiteSettings.module.css"
 import { SiteSettingsContext } from "../../../contexts/SiteSettingsContext"
 import ToggleButton from "../ToggleButton/ToggleButton"
 
-const SiteSettings = () => {
+interface SiteSettingsProps {
+    mobile?: boolean,
+}
+
+const SiteSettings = ({mobile}: SiteSettingsProps) => {
     const {theme, setTheme, language, setLanguage,lexicon} = useContext(SiteSettingsContext);
 
     // RETURNS the site settings:
@@ -12,7 +16,7 @@ const SiteSettings = () => {
 
     return (
         <>
-            <div className={styles.settings}>
+            <div className={`${styles.settings} ${mobile ? styles.mobile : ""}`}>
                 <ToggleButton
                     onClick={() => setLanguage(language === "nl" ? "en" : "nl")}
                     condition={language === "en"}

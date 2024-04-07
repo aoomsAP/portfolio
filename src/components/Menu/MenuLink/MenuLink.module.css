@@ -18,3 +18,10 @@
     color: var(--body-link);
 }
 
+.mobile {
+    margin: 0;
+}
+
+.mobile a {
+    padding: .5rem 0;
+}

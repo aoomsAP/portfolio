@@ -181,6 +181,7 @@ hr {
     text-align: center;
     width: 10rem;
 }
+
 hr:after {
     content: "&&";
     display: inline-block;

@@ -2,3 +2,7 @@
     display: inline-block;
     margin: 0rem 1rem;
 }
+
+.mobile {
+    margin: 0;
+}
