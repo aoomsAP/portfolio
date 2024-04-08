@@ -36,13 +36,13 @@ const Root = () => {
                 </div>
                 <div className="nav-mobile">
                     <div className="nav-mobile_header">
-                    <Initials size="4rem" />
-                    <button className="nav-icon" onClick={() => setShowNav(showNav ? false : true)}>
-                        <i className="bi bi-list" style={{ display: (showNav ? "none" : "block") }}></i>
-                        <i className="bi bi-x-lg" style={{ display: (showNav ? "block" : "none") }}></i>
-                    </button>
+                        <Initials size="4rem" />
+                        <button className="nav-icon" onClick={() => setShowNav(showNav ? false : true)}>
+                            <i className="bi bi-list" style={{ display: (showNav ? "none" : "block") }}></i>
+                            <i className="bi bi-x-lg" style={{ display: (showNav ? "block" : "none") }}></i>
+                        </button>
                     </div>
-                    <div className="nav-mobile_menu"style={{ display: (showNav ? "block" : "none") }}>
+                    <div className="nav-mobile_menu" style={{ display: (showNav ? "block" : "none") }}>
                         <Nav navItems={navItems} mobile={true} />
                         <hr />
                         <SiteSettings mobile={true} />

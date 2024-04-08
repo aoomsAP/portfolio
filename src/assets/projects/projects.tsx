@@ -103,8 +103,8 @@ export const projects: Project[] = [
         images: [],
         description_en: <>First crack at a simple portfolio website in React.js.</>,
         description_nl: <>Eerste poging tot een simpele portfolio website in React.js.</>,
-        challenges_en: ["adapting react hook form for contact functionality","projects likely better suited for CMS","design vs accessibility: high contrast WIP"],
-        challenges_nl: ["react hook form aanpassen voor contact functionaliteit","projecten waarschijnlijk beter geschikt voor CMS","design vs accessibiliteit: hoog contrast WIP"],
+        challenges_en: ["TO DO: filtering projects by tag","TO DO: high contrast theme"],
+        challenges_nl: ["TE DOEN: projecten filteren per tag","TE DOEN: hoog contrast thema"],
         tags: ["personal project", "react", "react.js", "typescript", "css"],
         github: "https://github.com/aoomsAP/portfolio",
     }
