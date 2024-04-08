@@ -1,12 +1,12 @@
 import styles from "./Tag.module.css"
 
 interface TagProps {
-    onClick: () => void;
+    // onClick: () => void;
     label: string,
     accent: boolean,
 }
 
-const Tag = ({ label, onClick, accent }: TagProps) => {
+const Tag = ({ label, accent }: TagProps) => {
 
     return (
         <>

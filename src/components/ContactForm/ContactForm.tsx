@@ -40,7 +40,7 @@ function ContactForm() {
     setValue('subject', `${userName} ${lexicon.contact_missioncontrol}`)
   }, [userName, setValue]);
 
-  const onSubmit = async (data: CustomFormData, e: SubmitEvent) => {
+  const onSubmit = async (data: any, e: any) => {
 
     console.log(data);
 
