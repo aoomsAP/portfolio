@@ -66,7 +66,7 @@ const ProjectItem = ({ project, lastproject }: ProjectItemProps) => {
                     {project.tags.map((tag, key) => {
                         return <Tag
                             key={key}
-                            onClick={function () { }}
+                            // onClick={function () { }}
                             label={tag}
                             accent={tag.includes("project") ? true : false} />
                     })}
