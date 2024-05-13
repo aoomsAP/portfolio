@@ -31,6 +31,10 @@ header {
     display: none;
 }
 
+.nav-mobile_menu {
+    display: none;
+}
+
 .nav-icon {
     font-size: 2.5rem;
     font-weight: bold;
@@ -79,13 +83,15 @@ footer {
     }
 
     .nav-mobile_menu {
+        width: 100%;
         padding: 1rem 0;
+        background-color: var(--body-background);
     }
 
     .nav-mobile_menu hr {
         width: 0rem;
-        margin-top: 2rem;
-        margin-left: 0;
+        margin: 1.5rem 0;
+        margin-left: .7rem;
         text-align: left;
     }
 

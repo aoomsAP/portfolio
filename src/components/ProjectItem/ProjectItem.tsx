@@ -37,20 +37,22 @@ const ProjectItem = ({ project }: ProjectItemProps) => {
 
                 <p className={styles.date}>{project.date.toLocaleDateString(lexicon.locale_string, { month: "long", year: "numeric" })}</p>
 
-                <div>
-                    {project.demo &&
-                        <a href={project.demo} target="_blank" className={styles.link_demo}>
-                            <i className="bi bi-search" title="Demo link" aria-label="Demo link"></i>
-                        </a>
-                    }
-                    {project.github &&
-                        <a href={project.github} target="_blank" className={styles.link_github}>
-                            <i className="devicon-github-original" title="Github link" aria-label="Github link"></i>
-                        </a>
-                    }
-                </div>
+                {(project.demo || project.github) &&
+                    <div className={styles.links}>
+                        {project.demo &&
+                            <a href={project.demo} target="_blank" className={styles.link_demo}>
+                                <i className="bi bi-search" title="Demo link" aria-label="Demo link"></i>
+                            </a>
+                        }
+                        {project.github &&
+                            <a href={project.github} target="_blank" className={styles.link_github}>
+                                <i className="devicon-github-original" title="Github link" aria-label="Github link"></i>
+                            </a>
+                        }
+                    </div>
+                }
 
-                <p>
+                <p className={styles.summary}>
                     {language == "en" ? project.summary_en : project.summary_nl}&nbsp;
                     <Link to={`/projects/${project.slug}`}>{lexicon.projects_readmore}</Link>
                 </p>

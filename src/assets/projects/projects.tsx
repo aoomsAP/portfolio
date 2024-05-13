@@ -242,15 +242,49 @@ export const projects: IProject[] = [
         title_nl: "Portfolio v1",
         date: new Date("2024-04-10"),
         featured_image_en: {
-            original: "images/projects/portfolio/portfolio.png",
+            original: "images/projects/portfolio/portfolio.jpg",
             originalAlt: "Portfolio Website",
             originalTitle: "Portfolio Website",
         },
         featured_image_nl: {
-            original: "images/projects/portfolio/portfolio.png",
+            original: "images/projects/portfolio/portfolio.jpg",
             originalAlt: "Portfolio Website",
             originalTitle: "Portfolio Website",
         },
+        images_en: [
+            {
+                original: "../images/projects/portfolio/portfolio.jpg",
+                originalAlt: "Portfolio: About",
+                originalTitle: "Portfolio: About",
+            },
+            {
+                original: "../images/projects/portfolio/portfolio2.webp",
+                originalAlt: "Portfolio: Projects",
+                originalTitle: "Portfolio: Projects",
+            },
+            {
+                original: "../images/projects/portfolio/portfolio3.webp",
+                originalAlt: "Portfolio: Project",
+                originalTitle: "Portfolio: Project",
+            },
+        ],
+        images_nl: [
+            {
+                original: "../images/projects/portfolio/portfolio.jpg",
+                originalAlt: "Portfolio: Over",
+                originalTitle: "Portfolio: Over",
+            },
+            {
+                original: "../images/projects/portfolio/portfolio2.webp",
+                originalAlt: "Portfolio: Projecten",
+                originalTitle: "Portfolio: Projecten",
+            },
+            {
+                original: "../images/projects/portfoliog/portfolio3.webp",
+                originalAlt: "Portfolio: Projecten",
+                originalTitle: "Portfolio: Projecten",
+            },
+        ],
         summary_en: <>First crack at a simple portfolio website in React.js.</>,
         summary_nl: <>Eerste poging tot een simpele portfolio website in React.js.</>,
         description_en: <>First crack at a simple portfolio website in React.js. Halfway through I decided to implement a CMS-type blog or portfolio, which was flying too close to the sun, particulary when making the website manually bilingual. For now the choice of technology & design is therefore ineffecient.</>,

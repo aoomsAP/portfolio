@@ -78,9 +78,6 @@ function ContactForm() {
 
         {!isSubmitSuccessful && (<>
           <p>{lexicon.contact_welcome}</p>
-          <p className={styles.linkedin}>
-            {lexicon.contact_linkedin} <a href="www.linkedin.com/in/alki-o-ab117b299">LinkedIn</a>.
-          </p>
           <form className={styles.form}
             onSubmit={handleSubmit(onSubmit)}>
             <input
@@ -212,6 +209,10 @@ function ContactForm() {
             </button>
 
           </form>
+
+          <p className={styles.linkedin}>
+            {lexicon.contact_linkedin} <a href="www.linkedin.com/in/alki-o-ab117b299">LinkedIn</a>.
+          </p>
         </>)}
 
         {isSubmitSuccessful && isSuccess && (

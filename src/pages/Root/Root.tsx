@@ -9,6 +9,7 @@ import Nav from "../../components/Nav/Nav";
 import SiteSettings from "../../components/SiteSettings/SiteSettings/SiteSettings";
 import { IMenuItem } from "../../types";
 import Initials from "../../components/Initials/Initials";
+import ScrollToTop from "../../components/ScrollToTop";
 
 const Root = () => {
     const { lexicon } = useContext(SiteSettingsContext);
@@ -28,6 +29,7 @@ const Root = () => {
 
     return (
         <>
+            <ScrollToTop />
             <header>
                 <div className="nav-desktop">
                     <Initials size="4rem" />
