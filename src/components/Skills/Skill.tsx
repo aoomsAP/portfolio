@@ -1,6 +1,4 @@
-import { useContext } from "react"
 import styles from "./Skill.module.css"
-import { SiteSettingsContext } from "../../contexts/SiteSettingsContext"
 
 interface SkillProps {
     name: string,
@@ -11,8 +9,6 @@ interface SkillProps {
 }
 
 const Skill = ({ name, icon, setSkill, emphasis }: SkillProps) => {
-
-    const {lexicon} = useContext(SiteSettingsContext);
 
     return (
         <i
