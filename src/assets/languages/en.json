@@ -12,13 +12,16 @@
     "home_experience": "Experience with",
 
     "about_title": "About me",
-    "about_description": "Alki Ooms is a software developer from Belgium. She enjoys learning perpetually, working within the scope of assignment and finding cohesion in different areas of knowledge. When she's not staring at a screen, she likes drawing and being an amateur multi-instrumentalist. Her latest victim is the violin.",
+    "about_description": "Alki Ooms is a software developer from Belgium. She enjoys learning perpetually and finding cohesion in different areas of knowledge. When she's not staring at a screen, she likes drawing and being an amateur multi-instrumentalist. Her latest victim is the violin.",
 
     "projects": "Projects",
+    "projects_back": "Back to projects",
     "projects_links": "Links",
     "magnifying_glass": "magnifying glass",
     "to_top_button": "return to top button",
     "projects_challenges": "Challenges",
+    "projects_todo": "To do",
+    "projects_readmore": "Read more",
 
     "project_personal": "Personal project",
     "project_school": "School project",

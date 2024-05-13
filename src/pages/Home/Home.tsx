@@ -13,6 +13,7 @@ const Home = () => {
         { name: "Javascript", icon: "devicon-javascript-plain", emphasis: true },
         { name: "MySQL", icon: "devicon-mysql-plain-wordmark", emphasis: true },
         { name: "C#", icon: "devicon-csharp-plain", emphasis: true },
+        { name: "ASP.NET Core", icon: "devicon-dotnetcore-plain", emphasis: true},
         { name: "Node.js", icon: "devicon-nodejs-plain-wordmark", emphasis: true },
         { name: "NPM", icon: "devicon-npm-original-wordmark", emphasis: true },
         { name: "Typescript", icon: "devicon-typescript-plain", emphasis: true },
@@ -22,8 +23,7 @@ const Home = () => {
         { name: "React.js", icon: "devicon-react-original-wordmark", emphasis: true },
         { name: "Git", icon: "devicon-git-plain-wordmark", emphasis: true },
         { name: "Wordpress", icon: "devicon-wordpress-plain", emphasis: true },
-
-        { name: "ASP.NET Core", icon: "devicon-dotnetcore-plain"},
+        
         { name: "Github", icon: "devicon-github-original-wordmark" },
         { name: "Neo4J", icon: "devicon-neo4j-plain-wordmark" },
         { name: "JQuery", icon: "devicon-jquery-plain-wordmark" },

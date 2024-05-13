@@ -53,6 +53,7 @@ const Root = () => {
             <Outlet />
 
             <footer>
+                <hr />
                 <Menu items={footerItems} />
             </footer>
         </>

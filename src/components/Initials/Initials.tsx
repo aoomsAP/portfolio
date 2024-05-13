@@ -16,7 +16,7 @@ const Initials = ({ size }: InitialsProps) => {
         <>
             <Link to="/" className={styles.initial}>
                 <span style={{ fontSize: size }} aria-label={lexicon.logo_alt}>
-                    a<span className={styles.dot}>o</span><span className={styles.accent}>.</span>
+                    ao<span className={styles.accent}>.</span>
                 </span>
             </Link>
         </>

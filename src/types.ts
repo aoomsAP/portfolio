@@ -20,20 +20,30 @@ export interface IMenuItem {
     url?: string,
 }
 
-export interface Project {
-    title_en: string,
-    title_nl: string,
+export interface IProject {
+    slug: string,
+    title_en: string | JSX.Element,
+    title_nl: string | JSX.Element,
     date: Date,
-    images?: ReactImageGalleryItem[],
+    update?: Date,
+    featured_image_en: ReactImageGalleryItem,
+    featured_image_nl: ReactImageGalleryItem,
+    images_en?: ReactImageGalleryItem[],
+    images_nl?: ReactImageGalleryItem[],
     video?: string,
-    description_en: string | JSX.Element,
-    description_nl: string | JSX.Element,
-    challenges_en: string[],
-    challenges_nl: string[],
-    tags: string[],
+    summary_en: string | JSX.Element,
+    summary_nl: string | JSX.Element,
+    description_en?: string | JSX.Element,
+    description_nl?: string | JSX.Element,
+    challenges_en?: string[],
+    challenges_nl?: string[],
+    todo_en?: string[],
+    todo_nl?: string[],
+    tags_en: string[],
+    tags_nl: string[],
     github?: string,
     demo?: string,
-    info?: string,
+    wip?: boolean,
 }
 
 export interface CustomFormData {

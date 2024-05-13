@@ -12,13 +12,16 @@
     "home_experience": "Ervaring met",
 
     "about_title": "Over mij",
-    "about_description": "Alki Ooms is een software developer uit België. Ze houdt van eindeloos bijleren, in opdracht werken en samenhang vinden in verschillende kennisvelden. Wanneer ze niet naar een scherm staart, tekent ze graag en is ze een amateuristisch multi-instrumentalist. Haar laatste slachtoffer is de viool.",
+    "about_description": "Alki Ooms is een software developer uit België. Ze houdt van eindeloos bijleren en samenhang vinden in verschillende kennisvelden. Wanneer ze niet naar een scherm staart, tekent ze graag en is ze een amateuristisch multi-instrumentalist. Haar laatste slachtoffer is de viool.",
 
     "projects": "Projecten",
+    "projects_back": "Terug naar projecten",
     "projects_links": "Links",
     "projects_magnifying_glass": "vergrootglas",
     "projects_to_top_button": "knop om naar boven te gaan",
     "projects_challenges": "Uitdagingen",
+    "projects_todo": "Toekomstplannen",
+    "projects_readmore": "Lees meer",
 
     "project_personal": "Persoonlijk project",
     "project_school": "School project",

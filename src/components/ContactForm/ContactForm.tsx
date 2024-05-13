@@ -25,10 +25,10 @@ function ContactForm() {
   const maxMessage = 3000;
 
   const [isSuccess, setIsSuccess] = useState(false);
-  const [nameCount,setNameCount] = useState(0);
-  const [messageCount,setMessageCount] = useState(0);
+  const [nameCount, setNameCount] = useState(0);
+  const [messageCount, setMessageCount] = useState(0);
   // success/error message currently not displayed
-  const [Message, setMessage] = useState<PostResult>(); 
+  const [Message, setMessage] = useState<PostResult>();
 
   const userName = useWatch({
     control,
@@ -78,6 +78,9 @@ function ContactForm() {
 
         {!isSubmitSuccessful && (<>
           <p>{lexicon.contact_welcome}</p>
+          <p className={styles.linkedin}>
+            {lexicon.contact_linkedin} <a href="www.linkedin.com/in/alki-o-ab117b299">LinkedIn</a>.
+          </p>
           <form className={styles.form}
             onSubmit={handleSubmit(onSubmit)}>
             <input
@@ -126,11 +129,11 @@ function ContactForm() {
                   aria-label={lexicon.character_count_alt}
                   className={nameCount < maxName ? styles.character_count : styles.character_count_error}>
                   {nameCount}/{maxName}
-                  </small>
+                </small>
               </div>
               {errors.name && (<div>
                 <small className={styles.error}>{errors.name.message}</small>
-              </div>)}            
+              </div>)}
             </div>
 
             <div className={styles.email}>
@@ -173,15 +176,15 @@ function ContactForm() {
                     value: maxMessage,
                     message: lexicon.contact_message_validation,
                   }
-                 })}
-                 onChange={e => setMessageCount(e.target.value.length)}
+                })}
+                onChange={e => setMessageCount(e.target.value.length)}
               />
               <div>
                 <small
                   aria-label={lexicon.character_count_alt}
                   className={messageCount < maxMessage ? styles.character_count : styles.character_count_error}>
                   {messageCount}/{maxMessage}
-                  </small>
+                </small>
               </div>
               {errors.message && (<div>
                 <small className={styles.error}>{errors.message.message}</small>
@@ -214,17 +217,17 @@ function ContactForm() {
         {isSubmitSuccessful && isSuccess && (
           <>
             <div className={styles.success_container}>
-              <i 
+              <i
                 aria-hidden
                 className="bi bi-envelope-check">
               </i>
               <h2>{lexicon.contact_submit_success_title}</h2>
               {Message && <>
-              <blockquote>
-                <p><strong>{lexicon.contact_from}:</strong> {Message?.data.name} ({Message?.data.email})</p>
-                <p><strong>{lexicon.contact_content}:</strong></p>
-                <p>{Message?.data.message}</p>
-              </blockquote></>}
+                <blockquote>
+                  <p><strong>{lexicon.contact_from}:</strong> {Message?.data.name} ({Message?.data.email})</p>
+                  <p><strong>{lexicon.contact_content}:</strong></p>
+                  <p>{Message?.data.message}</p>
+                </blockquote></>}
               <p>{lexicon.contact_submit_success_message}</p>
               <button
                 className={styles.submit_button}
@@ -237,9 +240,9 @@ function ContactForm() {
 
         {isSubmitSuccessful && !isSuccess && (
           <div className={styles.error_container}>
-            <i 
-            aria-hidden
-            className="bi bi-envelope-x">
+            <i
+              aria-hidden
+              className="bi bi-envelope-x">
             </i>
             <h2>{lexicon.contact_submit_error_title}</h2>
             <p>{lexicon.contact_submit_error_message}</p>

@@ -1,0 +1,80 @@
+.project {
+    margin: 2rem 0 2rem 0;
+    /* border-bottom: 1px solid var(--body-text-transparent) */
+}
+
+.gallery_container {
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.featured_image {
+    border-radius: 3px;
+    width: 100%;
+    margin: 0;
+}
+
+.featured_image img {
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.video {
+    border-radius: 3px;
+    width: 100%;
+    border: none;
+    aspect-ratio: 16/9;
+}
+
+.date {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--body-link);
+    margin: 0 0 2rem 0;
+}
+
+.challenges, .todo {
+    margin-bottom: 2rem;
+}
+
+.links {
+    letter-spacing: 1px;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    padding: .5rem 0;
+}
+
+.links i {
+    margin-right: .5rem;
+}
+
+.links a {
+    margin: 0;
+    padding: .5rem .7rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    transition: background-color .3s;
+    text-decoration: none;
+}
+
+.links a:hover {
+    background-color: var(--body-background-weak);
+    color: var(--body-link);
+}
+
+.taglist {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}

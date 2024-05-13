@@ -2,3 +2,14 @@
     max-width: var(--max-width);
     margin: 0 auto;
 }
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.projects>* {
+    flex: 1 1 350px;
+}

@@ -9,10 +9,6 @@
     text-transform: none;
 }
 
-.dot {
-    letter-spacing: -6px;
-}
-
 .accent {
     color: var(--body-link-hover);
 }

@@ -18,7 +18,7 @@ const Tag = ({ label, accent }: TagProps) => {
             </button> */}
 
             <div className={accent ? styles.accent : styles.tag}>
-                # {label}
+                #&nbsp;{label}
             </div>
         </>
     )
