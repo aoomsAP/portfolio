@@ -1,5 +1,5 @@
-import { Outlet } from "react-router-dom"
-import { useContext, useState } from "react";
+import { Outlet, useLocation } from "react-router-dom"
+import { useContext, useEffect, useState } from "react";
 import { SiteSettingsContext } from "../../contexts/SiteSettingsContext";
 import "./Root.css"
 
@@ -27,6 +27,12 @@ const Root = () => {
 
     const [showNav, setShowNav] = useState<boolean>(false);
 
+    // close mobile nav whenever location changes
+    const path = useLocation();
+    useEffect(() =>{
+        setShowNav(false);
+    }, [path])
+
     return (
         <>
             <ScrollToTop />
@@ -45,7 +51,8 @@ const Root = () => {
                         </button>
                     </div>
                     <div className="nav-mobile_menu" style={{ display: (showNav ? "block" : "none") }}
-                        onClick={() => setShowNav(showNav ? false : true)}>
+                        // onClick={() => setShowNav(showNav ? false : true)}
+                        >
                         <Nav navItems={navItems} mobile={true} />
                         <hr />
                         <SiteSettings mobile={true} />
