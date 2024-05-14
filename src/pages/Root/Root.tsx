@@ -44,7 +44,8 @@ const Root = () => {
                             <i className="bi bi-x-lg" style={{ display: (showNav ? "block" : "none") }}></i>
                         </button>
                     </div>
-                    <div className="nav-mobile_menu" style={{ display: (showNav ? "block" : "none") }}>
+                    <div className="nav-mobile_menu" style={{ display: (showNav ? "block" : "none") }}
+                        onClick={() => setShowNav(showNav ? false : true)}>
                         <Nav navItems={navItems} mobile={true} />
                         <hr />
                         <SiteSettings mobile={true} />

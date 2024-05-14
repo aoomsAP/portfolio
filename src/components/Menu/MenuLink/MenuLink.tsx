@@ -12,7 +12,7 @@ const MenuLink = ({ link, title, mobile}: MenuLinkProps) => {
     return (
         <>
             <li className={`${styles.link} ${mobile ? styles.mobile : ""}`}>
-                <Link to={link ?? ""} >
+                <Link to={link ?? ""} target={"_blank"}>
                     {title}
                 </Link>
             </li>

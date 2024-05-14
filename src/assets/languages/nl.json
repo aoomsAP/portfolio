@@ -13,7 +13,7 @@
     "skill_intermediate": "Gemiddelde ervaring met",
     "skill_minimal": "Geringe ervaring met",
 
-    "about_title": "Over mij",
+    "about_title": "Over",
     "about_description": "Alki Ooms is een software developer uit België. Ze houdt van eindeloos bijleren en samenhang vinden in verschillende kennisvelden. Wanneer ze niet naar een scherm staart, tekent ze graag en is ze een amateuristisch multi-instrumentalist. Haar laatste slachtoffer is de viool.",
 
     "projects": "Projecten",
@@ -55,6 +55,11 @@
     "contact_submit_error_title": "Oeps, er ging iets mis.",
     "contact_submit_error_message": "Uw bericht kon niet verzonden worden.",
     "contact_try_again": "Probeer opnieuw",
+
+    "notfound": "Oeps",
+    "notfound_paragraph": "Deze pagina kon niet gevonden worden of is tijdelijk onbeschikbaar.",
+    "notfound_backhome": "Terug naar home pagina",
+    "notfound_project": "Dit project kon niet gevonden worden of is tijdelijk onbeschikbaar.",
 
     "footer_createdby": "Gecreëerd door"
 }

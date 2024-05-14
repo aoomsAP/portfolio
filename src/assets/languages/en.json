@@ -13,7 +13,7 @@
     "skill_intermediate": "Intermediate experience with",
     "skill_minimal": "Minor experience with",
 
-    "about_title": "About me",
+    "about_title": "About",
     "about_description": "Alki Ooms is a software developer from Belgium. She enjoys learning perpetually and finding cohesion in different areas of knowledge. When she's not staring at a screen, she likes drawing and being an amateur multi-instrumentalist. Her latest victim is the violin.",
 
     "projects": "Projects",
@@ -55,6 +55,11 @@
     "contact_submit_error_title": "Oops, something went wrong.",
     "contact_submit_error_message": "Your message failed to be sent.",
     "contact_try_again": "Try again",
+
+    "notfound": "Oops",
+    "notfound_paragraph": "This page could not be found or is temporarily unavailable.",
+    "notfound_backhome": "Back to home page",
+    "notfound_project": "This project could not be found or is temporarily unavailable.",
 
     "footer_createdby": "Created by"
 }

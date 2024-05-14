@@ -31,8 +31,10 @@ const Project = () => {
                 }
 
                 {
-                    !project && <section>
-                        <p><i className="bi bi-x-square"></i> Project not found.</p>
+                    !project && 
+                    <section className={styles.notfound}>
+                        <h2>{lexicon.notfound}</h2>
+                        <p><i className="bi bi-x-square-fill"></i> {lexicon.notfound_project}</p>
                     </section>
                 }
 

@@ -10,6 +10,7 @@ import Contact from "./pages/Contact/Contact";
 
 // contexts
 import { SiteSettingsProvider } from "./contexts/SiteSettingsContext";
+import NotFound from "./pages/NotFound/NotFound";
 
 
 function App() {
@@ -34,6 +35,10 @@ function App() {
         {
           path: "contact",
           element: <Contact />
+        },
+        {
+          path: "*",
+          element: <NotFound />
         }
       ]
     }

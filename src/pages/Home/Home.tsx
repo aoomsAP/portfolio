@@ -43,7 +43,7 @@ const Home = () => {
         <>
             <main className={styles.main}>
 
-                <h1>// {lexicon.about_title}</h1>
+                <h1>// {lexicon.about_title} Alki</h1>
                 <p>{lexicon.about_description}</p>
 
                 <section className={styles.skills_wrapper}>
