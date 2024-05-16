@@ -1,7 +1,8 @@
 import { Outlet, useLocation } from "react-router-dom"
 import { useContext, useEffect, useState } from "react";
 import { SiteSettingsContext } from "../../contexts/SiteSettingsContext";
-import "./Root.css"
+import "./Root.css";
+import { Analytics } from "@vercel/analytics/react";
 
 // components
 import Menu from "../../components/Menu/Menu/Menu";
@@ -66,6 +67,8 @@ const Root = () => {
                 <hr />
                 <Menu items={footerItems} />
             </footer>
+
+            <Analytics/>
         </>
     )
 }
