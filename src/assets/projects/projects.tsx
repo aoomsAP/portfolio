@@ -209,6 +209,35 @@ export const projects: IProject[] = [
     // -----------------------------------------------------------------------------------------
 
     {
+        slug: "game-of-life",
+        title_en: "Game Of Life",
+        title_nl: "Game Of Life",
+        date: new Date("2023-11-10"),
+        featured_image_en: {
+            original: "images/projects/game-of-life/game-of-life.webp",
+            originalAlt: "Game Of Life",
+            originalTitle: "Game Of Life",
+        },
+        featured_image_nl: {
+            original: "images/projects/game-of-life/game-of-life.webp",
+            originalAlt: "Game Of Life",
+            originalTitle: "Game Of Life",
+        },
+        summary_en: <>Conway's <a href="https://restcountries.com/">Game Of Life</a> in React.js, with numerous custom settings & options.</>,
+        summary_nl: <>Conway's <a href="https://restcountries.com/">Game Of Life</a> in React.js, met verscheidene settings & opties.</>,
+        description_en: <>Conway's <a href="https://restcountries.com/">Game Of Life</a> in React.js, with numerous custom settings & options. This was made in the early weeks of learning React.js with a focus on useEffect and useState. It is not optimized for mobile (dragover painting doesn't work, not responsief), nor has the project a proper separation of components.</>,
+        description_nl: <>Conway's <a href="https://restcountries.com/">Game Of Life</a> in React.js, met verscheidene settings & opties. Dit werd gemaakt in de eerste weken van het leren van React.js, met een focus op useEffect en useState. Het is niet geoptimaliseerd voor mobiele toestellen (dragover om op het bord te tekenen werkt niet, niet responsief), en het project heeft ook geen behoorlijke structuur met afzonderlijke componenten.</>,
+        todo_en: ["reusable & separate components", "optimalization for mobile"],
+        todo_nl: ["herbruikbare & afzonderlijke componenten", "optimalisatie voor mobiele toestellen"],
+        tags_en: ["personal project", "react", "react.js", "typescript"],
+        tags_nl: ["persoonlijk project", "react", "react.js", "typescript"],
+        github: "https://github.com/aoomsAP/game-of-life",
+        demo: "https://game-of-life-psi-seven.vercel.app/"
+    },
+
+    // -----------------------------------------------------------------------------------------
+
+    {
         slug: "vlaamse-programmeerwedstrijd",
         title_en: "Flemish Programming Contest 2024",
         title_nl: <>Vlaamse Programmeer&shy;wedstrijd 2024</>,
@@ -227,8 +256,8 @@ export const projects: IProject[] = [
         summary_nl: <>Met twee medestudenten nam ik deel aan de 2024 editie van de Vlaamse Programmeerwedstrijd.</>,
         description_en: <>With two fellow students, I participated in the Flemish Programming Contest edition of 2024. Our team came in 10th, but we were first amongst the graduate students in our category. Preparing for the competition was half the fun, so we solved questions from previous editions both individually and as a team, which can be browsed in the Github link below.</>,
         description_nl: <>Met twee medestudenten nam ik deel aan de 2024 editie van de Vlaamse Programmeerwedstrijd. Ons team behaalde de 10de plaats, maar we waren de eerste graduaatstudenten in onze categorie. Oefenenen voor de wedstrijd was even leuk als deelnemen, dus hebben we zowel individueel als in team enkele opgaves van vorige edities uitgewerkt, die geraadpleegd kunnen worden in de Github link hieronder.</>,
-        challenges_en: ["time sensitive programming", "more mathematical and algorithmic problems", "processing and brainstorming problems in a team","small advantages and disadvantages of different programming languages for problem-solving"],
-        challenges_nl: ["programmeren onder tijdsdruk", "meer wiskundige en algoritmische problemen", "probemen verwerken en brainstormen in een team","kleine voordelen en nadelen van verschillende programmeertalen in probleemoplossing"],
+        challenges_en: ["time sensitive programming", "more mathematical and algorithmic problems", "processing and brainstorming problems in a team", "small advantages and disadvantages of different programming languages for problem-solving"],
+        challenges_nl: ["programmeren onder tijdsdruk", "meer wiskundige en algoritmische problemen", "probemen verwerken en brainstormen in een team", "kleine voordelen en nadelen van verschillende programmeertalen in probleemoplossing"],
         tags_en: ["personal project", "vpw", "competition", "javascript", "c#"],
         tags_nl: ["persoonlijk project", "vpw", "competition", "javascript", "c#"],
         github: "https://github.com/aoomsAP/vlaamseprogrammeerwedstrijd",
