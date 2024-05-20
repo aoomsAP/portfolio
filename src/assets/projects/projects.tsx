@@ -223,6 +223,30 @@ export const projects: IProject[] = [
             originalAlt: "Game Of Life",
             originalTitle: "Game Of Life",
         },
+        images_en: [
+            {
+                original: "../images/projects/game-of-life/game-of-life-1.gif",
+                originalAlt: "Game Of Life: Drawing a pattern",
+                originalTitle: "Game Of Life: Drawing a pattern",
+            },
+            {
+                original: "../images/projects/game-of-life/game-of-life-2.gif",
+                originalAlt: "Game Of Life: Running a preset pattern",
+                originalTitle: "Game Of Life: Running a preset pattern",
+            },
+        ],
+        images_nl: [
+            {
+                original: "../images/projects/game-of-life/game-of-life-1.gif",
+                originalAlt: "Game Of Life: Een patroon tekenen",
+                originalTitle: "Game Of Life: Een patroon tekenen",
+            },
+            {
+                original: "../images/projects/game-of-life/game-of-life-2.gif",
+                originalAlt: "Game Of Life: Een preset patroon gebruiken",
+                originalTitle: "Game Of Life: Een preset patroon gebruiken",
+            },
+        ],
         summary_en: <>Conway's <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game Of Life</a> in React.js, with numerous custom settings & options.</>,
         summary_nl: <>Conway's <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game Of Life</a> in React.js, met verscheidene settings & opties.</>,
         description_en: <>Conway's <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game Of Life</a> in React.js, with numerous custom settings & options. This was made in the early weeks of learning React.js with a focus on useEffect and useState. It is not optimized for mobile (dragover painting doesn't work, not responsive), nor has the project a proper separation of components.</>,
