@@ -22,8 +22,9 @@ const Root = () => {
     ]
 
     const footerItems: IMenuItem[] = [
-        { type: "item", text: `© Alki Ooms` },
+        { type: "item", text: `© Alki Ooms (2024)` },
         { type: "link", text: "Github", url: "https://github.com/aoomsAP" },
+        { type: "navlink", text: "Privacy", url: "/privacy" },
     ]
 
     const [showNav, setShowNav] = useState<boolean>(false);

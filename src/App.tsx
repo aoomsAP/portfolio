@@ -11,6 +11,7 @@ import Contact from "./pages/Contact/Contact";
 // contexts
 import { SiteSettingsProvider } from "./contexts/SiteSettingsContext";
 import NotFound from "./pages/NotFound/NotFound";
+import Privacy from "./pages/Privacy/Privacy";
 
 
 function App() {
@@ -35,6 +36,10 @@ function App() {
         {
           path: "contact",
           element: <Contact />
+        },
+        {
+          path: "privacy",
+          element: <Privacy />
         },
         {
           path: "*",

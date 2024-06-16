@@ -23,8 +23,9 @@ const Home = () => {
         { name: "React.js", icon: "devicon-react-original-wordmark", emphasis: true },
         { name: "Git", icon: "devicon-git-plain-wordmark", emphasis: true },
         { name: "Wordpress", icon: "devicon-wordpress-plain", emphasis: true },
+        { name: "Github", icon: "devicon-github-original-wordmark", emphasis: true },
 
-        { name: "Github", icon: "devicon-github-original-wordmark" },
+        { name: "PHP", icon: "devicon-php-plain" },
         { name: "Neo4J", icon: "devicon-neo4j-plain-wordmark" },
         { name: "JQuery", icon: "devicon-jquery-plain-wordmark" },
         { name: "Sass", icon: "devicon-sass-original" },

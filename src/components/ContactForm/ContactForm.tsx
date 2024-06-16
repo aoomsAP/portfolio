@@ -6,6 +6,7 @@ import { useForm, useWatch } from "react-hook-form";
 import { SiteSettingsContext } from "../../contexts/SiteSettingsContext";
 import { CustomFormData, PostResult } from "../../types";
 import { ThreeDots } from 'react-loader-spinner'
+import { Link } from "react-router-dom";
 
 function ContactForm() {
   const { theme, lexicon } = useContext(SiteSettingsContext);
@@ -18,6 +19,7 @@ function ContactForm() {
     control,
     formState: { errors, isSubmitSuccessful, isSubmitting },
   } = useForm<CustomFormData>({
+    defaultValues: { consent: false },
     mode: "onTouched",
   });
 
@@ -185,6 +187,17 @@ function ContactForm() {
               </div>
               {errors.message && (<div>
                 <small className={styles.error}>{errors.message.message}</small>
+              </div>)}
+            </div>
+
+            <div className="consent">
+              <input type="checkbox" id="consent"
+                {...register("consent", {
+                  required: lexicon.contact_privacy_reminder,
+                })}/>
+              &nbsp;<label htmlFor="consent"><Link to={"/privacy"}><small>{lexicon.contact_privacy}</small></Link></label>
+              {errors.consent && (<div>
+                <small className={styles.error}>{errors.consent.message}</small>
               </div>)}
             </div>
 

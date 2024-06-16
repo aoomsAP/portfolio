@@ -56,10 +56,19 @@
     "contact_submit_error_message": "Your message failed to be sent.",
     "contact_try_again": "Try again",
 
+    "contact_privacy": "I consent to the privacy policy of the website",
+    "contact_privacy_reminder": "Please consent to the privacy policy of the website",
+
     "notfound": "Oops",
     "notfound_paragraph": "This page could not be found or is temporarily unavailable.",
     "notfound_backhome": "Back to home page",
     "notfound_project": "This project could not be found or is temporarily unavailable.",
+
+    "privacy_title": "Privacy Policy",
+    "privacy_date": "Last altered on",
+    "privacy_owner":"alkiooms.com is a website published by Alki Ooms.",
+    "privacy_data":"The website keeps data from visitors that use the contact form. This contains the name, email adress and sent message of the user. This data is solely read by the owner of the website and is not shared with third parties. The data is stored solely in the gmail account of the owner, with the intent to process your messages and answer your questions. If you want to request a copy of your data or you desire to see this data altered or removed, please contact me via the link below.",
+    "privacy_preferences":"The website preferences (language & layout) are not read or stored by the website, and are solely found in the local storage of the browser of the visitor.",
 
     "footer_createdby": "Created by"
 }

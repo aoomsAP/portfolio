@@ -49,6 +49,7 @@ export interface IProject {
 export interface CustomFormData {
     access_key: string,
     botcheck: boolean,
+    consent: boolean,
     email: string,
     from_name: string,
     message: string,

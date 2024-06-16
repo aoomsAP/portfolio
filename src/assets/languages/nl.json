@@ -56,10 +56,19 @@
     "contact_submit_error_message": "Uw bericht kon niet verzonden worden.",
     "contact_try_again": "Probeer opnieuw",
 
+    "contact_privacy": "Ik ga akkoord met het privacybeleid van de website",
+    "contact_privacy_reminder": "Gelieve akkoord te gaan met het privacybeleid van de website",
+
     "notfound": "Oeps",
     "notfound_paragraph": "Deze pagina kon niet gevonden worden of is tijdelijk onbeschikbaar.",
     "notfound_backhome": "Terug naar home pagina",
     "notfound_project": "Dit project kon niet gevonden worden of is tijdelijk onbeschikbaar.",
+    
+    "privacy_title": "Privacybeleid",
+    "privacy_date": "Laatst aangepast op",
+    "privacy_owner": "alkiooms.com is een website uitgegeven door Alki Ooms.",
+    "privacy_data":"De website houdt data bij van bezoekers die het contactformulier gebruiken. Dit bevat de naam, e-mailadres en verzonden bericht van de gebruiker. Deze data wordt enkel gelezen door de eigenaar van de website en wordt verder niet gedeeld. De gegevens worden enkel bijgehouden in de gmail-account van de eigenaar, met de doelstelling om uw berichten te verwerken en te antwoorden op uw vragen. Indien u een kopie van uw gegevens wenst of u wenst dat deze data aangepast of verwijderd wordt, gelieve contact op te nemen via de link onderaan.",
+    "privacy_preferences": "De websitevoorkeuren (taal en layout) worden niet gelezen of bijgehouden door de website, en bevinden zich uitsluitend in de lokale opslag van de browser van de gebruiker.",
 
     "footer_createdby": "Gecreëerd door"
 }
